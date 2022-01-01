@@ -1,6 +1,7 @@
 set guicursor=
 set relativenumber
 set nohlsearch
+
 set hidden
 set noerrorbells
 set tabstop=2 softtabstop=2
@@ -49,6 +50,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Look and feel
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'dracula/vim'
+Plug 'nvim-lualine/lualine.nvim'
 
 " Dev
 Plug 'tpope/vim-endwise'
@@ -137,6 +139,10 @@ lua << EOF
   
   require('lspconfig')['pyright'].setup {
     capabilities = capabilities
+  }
+
+  require'lualine'.setup{
+    options = { theme = 'dracula' }
   }
 
   require'nvim-web-devicons'.setup{}
