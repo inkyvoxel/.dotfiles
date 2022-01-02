@@ -1,7 +1,6 @@
 set guicursor=
 set relativenumber
 set nohlsearch
-
 set hidden
 set noerrorbells
 set tabstop=2 softtabstop=2
@@ -49,7 +48,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Look and feel
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'dracula/vim'
+Plug 'rebelot/kanagawa.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 
 " Dev
@@ -63,7 +62,7 @@ call plug#end()
 
 syntax enable
 
-colorscheme dracula
+colorscheme kanagawa
 
 let mapleader=" "
 
@@ -142,7 +141,7 @@ lua << EOF
   }
 
   require'lualine'.setup{
-    options = { theme = 'dracula' }
+    options = { theme = 'kanagawa' }
   }
 
   require'nvim-web-devicons'.setup{}
