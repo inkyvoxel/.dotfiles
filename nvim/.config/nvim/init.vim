@@ -1,6 +1,5 @@
 set guicursor=
 set relativenumber
-set nohlsearch
 set hidden
 set noerrorbells
 set tabstop=2 softtabstop=2
@@ -15,6 +14,7 @@ set nowritebackup
 set undodir=~/.vim/undodir
 set undofile
 set incsearch
+set hlsearch
 set termguicolors
 set scrolloff=10
 set signcolumn=number
